@@ -1,0 +1,128 @@
+* {
+  margin: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.main {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.header {
+  background: black;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.menu {
+  background: grey;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.logo {
+  background: red;
+  flex: 1 1 auto;
+  height: 30px;
+}
+
+.nav {
+  background: red;
+  flex: 5 1 auto;
+  height: 30px;
+}
+
+.upper-box {
+  background: red;
+  flex: 1 1 auto;
+  height: 30px;
+}
+
+.main-text {
+  background: orange;
+}
+
+.section {
+  background: #000;
+  display: flex;
+}
+
+.articles {
+  background: #ffbe0f;
+  display: flex;
+  flex: 2 1 auto;
+  flex-flow: row wrap;
+}
+
+.article {
+  background: skyblue;
+  flex: 1 1 40%;
+}
+
+.navigation {
+  background: rgb(51, 51, 185);
+  flex: 1 1 100%;
+}
+
+.banner-container {
+  display: flex;
+  background: #f73f52;
+  flex-flow: column;
+  flex: 1 1 auto;
+}
+
+.banner {
+  background: #ffea85;
+}
+
+.footer {
+  background: #000;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-nav {
+  background: #8f4f4f;
+  width: 100%;
+}
+/* tablet */
+
+@media (min-width: 481px) and (max-width: 1024px) {
+  .section {
+    flex-direction: column;
+    background: yellow;
+  }
+}
+/* mobile portrait */
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .header {
+    justify-content: center;
+  }
+  .menu {
+    background: grey;
+    display: flex;
+    flex-flow: column wrap;
+  }
+  .logo {
+    background: red;
+    flex: 1 1 auto;
+  }
+  .nav {
+    background: red;
+    flex: 1 1 auto;
+  }
+  .social {
+    background: red;
+    flex: 1 1 auto;
+  }
+  .section {
+    display: flex;
+    flex-direction: column;
+  }
+  .articulos {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+}
